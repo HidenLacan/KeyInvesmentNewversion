@@ -704,6 +704,14 @@
     }
   }
   @media(max-width: 479px) {
+
+    .form-select{
+        max-width: auto;
+    }
+
+    .form-control{
+      max-width: auto;
+    }
     .home-burger-menu {
       margin-left: var(--dl-space-space-doubleunit);
     }
