@@ -27,13 +27,7 @@
   
   
   
-  @media(max-width: 479px) {
-    .feature-card4-text {
-      font-style: normal;
-      font-weight: 600;
-    }
-  }
-  
+ 
   .gallery-card2-gallery-card {
     width: 100%;
     height: 100%;
@@ -110,18 +104,7 @@
       flex-direction: column;
     }
   }
-  @media(max-width: 479px) {
-    .gallery-card2-container {
-      max-width: auto;
-    }
-    .gallery-card2-image {
-      top: 0px;
-      left: 0px;
-      right: auto;
-      bottom: auto;
-    }
-  }
-  
+
   .home-container {
     width: 100%;
     height: auto;
@@ -468,6 +451,8 @@
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+
+    
   }
   .home-image2 {
     width: 450px;
@@ -705,6 +690,15 @@
   }
   @media(max-width: 479px) {
 
+
+    .label {
+      font-size: 0.875rem; /* Ajusta el tamaño de la fuente */
+      padding: 0.5rem; /* Reduce el padding si es necesario */
+      margin: 0; /* Asegúrate de que el margen no sea demasiado grande */
+      white-space: nowrap; /* Evita que el texto se envuelva si eso es deseable */
+      overflow: hidden; /* Oculta el texto que desborda el contenedor */
+      text-overflow: ellipsis; /* Muestra puntos suspensivos si el texto es demasiado largo */
+    }
     .form-select{
         max-width: auto;
     }
@@ -750,9 +744,10 @@
     .home-container11,
     .home-container12 { /* Añadido para asegurar que no haya desbordamiento */
       overflow: hidden; /* Oculta el contenido que desborda el contenedor */
-      width: 100%; /* Asegura que el contenedor no sea más ancho que la pantalla */
-      max-width: 100%; /* Asegura que el contenedor no sea más ancho que la pantalla */
+      /* Asegura que el contenedor no sea más ancho que la pantalla */
       box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+
+      
     }
   }
   

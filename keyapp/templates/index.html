@@ -285,11 +285,8 @@
                     src="../static/pexels-magda-ehlers-4198862.jpg"
                     class="home-image2" />
                 <div class="">
-                    <form class="" method="POST" action="{%url 'index' %}" >
+                    <form  method="POST" action="{%url 'index' %}" >
                         {%csrf_token%}
-                        <div class="">
-                            
-
                                 <label for="sector">Sector:</label>
                                 <select  class="form-select" name="sector">
                                     <option value="Ganaderia">Ganaderia</option>
