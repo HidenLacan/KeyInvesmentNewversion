@@ -488,6 +488,8 @@
     height: 410px;
     display: flex;
   }
+
+    /* here the problem */
   .home-container12 {
     flex: 0 0 auto;
     width: 800px;
@@ -499,6 +501,8 @@
     flex-direction: column;
     justify-content: flex-start;
   }
+
+  /* here the problem */
   .home-container13 {
     width: 424px;
     height: 473px;
@@ -699,7 +703,7 @@
       padding-right: 32px;
     }
   }
-  @media(max-width: 479px) {
+  @media(max-width: 480px) {
     .home-burger-menu {
       margin-left: var(--dl-space-space-doubleunit);
     }
@@ -736,6 +740,9 @@
       height: 250px;
     }
     .home-container11 {
+      grid-template-columns: 1fr;
+    }
+    .home-container12 {
       grid-template-columns: 1fr;
     }
     .home-testimonial {
