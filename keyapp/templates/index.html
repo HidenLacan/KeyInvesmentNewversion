@@ -284,11 +284,11 @@
                 <img alt="image"
                     src="../static/pexels-magda-ehlers-4198862.jpg"
                     class="home-image2" />
-                <div class="home-container11">
-                    <form class="home-form" method="POST" action="{%url 'index' %}" >
+                <div class="">
+                    <form class="" method="POST" action="{%url 'index' %}" >
                         {%csrf_token%}
-                        <div class="home-container12">
-                            <div class="home-container13">
+                        <div class="">
+                            {% comment %} <div class=""> {% endcomment %}
 
                                 <label for="sector">Sector:</label>
                                 <select  class="form-select" name="sector">
@@ -356,13 +356,13 @@
                                 
 
 
-                            </div>
+                            {% comment %} </div> {% endcomment %}
 
                     </form>
                     
 
                 </div>
-                </form>
+                
             </div>
             
         </div>

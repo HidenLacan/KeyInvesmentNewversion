@@ -110,15 +110,43 @@
       flex-direction: column;
     }
   }
-  @media(max-width: 479px) {
-    .gallery-card2-container {
-      max-width: auto;
+  @media(max-width: 480px) {
+    .home-burger-menu {
+      margin-left: var(--dl-space-space-doubleunit);
     }
-    .gallery-card2-image {
-      top: 0px;
-      left: 0px;
-      right: auto;
-      bottom: auto;
+    .home-cta-btn {
+      font-size: 1rem; /* Cambiado de 16px a 1rem */
+      padding: var(--dl-space-space-unit);
+    }
+    .home-hero-text-container,
+    .home-container04,
+    .home-text13 {
+      width: 100%; /* Esto asegura que los contenedores ocupen todo el ancho */
+    }
+    .home-features,
+    .home-testimonial {
+      padding: 2rem var(--dl-space-space-unit); /* Esto proporciona un padding uniforme */
+    }
+    .home-container03,
+    .home-container11 {
+      grid-template-columns: 1fr; /* Asegura una sola columna en contenedores de grid */
+    }
+    .home-image1,
+    .home-image2 {
+      width: 100%; /* Hace que las imágenes sean responsivas */
+      height: auto; /* Mantiene la proporción de las imágenes */
+      max-width: 250px; /* Limita el tamaño máximo de la imagen */
+      max-height: 250px;
+    }
+    .home-gallery {
+      padding: var(--dl-space-space-unit);
+      flex-direction: column;
+    }
+    .home-icon10 {
+      margin-bottom: 0;
+    }
+    .home-icon12 {
+      margin-bottom: var(--dl-space-space-unit);
     }
   }
   
@@ -490,8 +518,8 @@
   }
   .home-container12 {
     flex: 0 0 auto;
-    width: 800px;
-    height: 466px;
+    /* width: 800px;
+    height: 466px; */
     display: flex;
     align-items: flex-start;
     border-color: #ffffff;
@@ -500,14 +528,14 @@
     justify-content: flex-start;
   }
   .home-container13 {
-    width: 424px;
-    height: 473px;
+    /* width: 424px;
+    height: 473px; */
     display: flex;
     flex-direction: column;
   }
   .home-container14 {
-    width: 401px;
-    height: 108px;
+    /* width: 401px;
+    height: 108px; */
     display: flex;
     flex-direction: column;
   }
@@ -520,8 +548,8 @@
     height: 53px;
   }
   .home-container15 {
-    width: 401px;
-    height: 108px;
+    /* width: 401px;
+    height: 108px; */
     display: flex;
     flex-direction: column;
   }
@@ -530,8 +558,8 @@
     height: 53px;
   }
   .home-container16 {
-    width: 401px;
-    height: 108px;
+    /* width: 401px;
+    height: 108px; */
     display: flex;
     flex-direction: column;
   }
@@ -704,54 +732,45 @@
       margin-left: var(--dl-space-space-doubleunit);
     }
     .home-cta-btn {
-      font-size: 16px;
-      padding-left: var(--dl-space-space-doubleunit);
-      padding-right: var(--dl-space-space-doubleunit);
+      font-size: 1rem; /* Cambiado de 16px a 1rem */
+      padding: var(--dl-space-space-unit);
     }
-    .home-hero-text-container {
-      width: 100%;
+    .home-hero-text-container,
+    .home-container04,
+    .home-text13 {
+      width: 100%; /* Esto asegura que los contenedores ocupen todo el ancho */
     }
-    .home-features {
-      padding-top: 32px;
-      padding-left: var(--dl-space-space-unit);
-      padding-right: var(--dl-space-space-unit);
-      padding-bottom: 32px;
+    .home-features,
+    .home-testimonial {
+      padding: 2rem var(--dl-space-space-unit); /* Esto proporciona un padding uniforme */
     }
-    .home-container03 {
-      grid-template-columns: 1fr;
+    .home-container03,
+    .home-container11 {
+      grid-template-columns: 1fr; /* Asegura una sola columna en contenedores de grid */
     }
-    .home-image1 {
-      width: 250px;
-      height: 250px;
+    .home-image1,
+    .home-image2 {
+      width: 100%; /* Hace que las imágenes sean responsivas */
+      height: auto; /* Mantiene la proporción de las imágenes */
+      max-width: 100%; /* Ajusta el ancho máximo al 100% del contenedor */
+      max-height: auto; /* Altura máxima automática para mantener la proporción */
     }
     .home-gallery {
       padding: var(--dl-space-space-unit);
       flex-direction: column;
     }
-    .home-container04 {
-      width: auto;
-    }
-    .home-image2 {
-      width: 250px;
-      height: 250px;
-    }
-    .home-container11 {
-      grid-template-columns: 1fr;
-    }
-    .home-testimonial {
-      padding-top: 32px;
-      padding-left: var(--dl-space-space-unit);
-      padding-right: var(--dl-space-space-unit);
-      padding-bottom: 32px;
-    }
-    .home-icon10 {
-      margin-bottom: 0px;
-    }
-    .home-text13 {
-      width: auto;
-    }
+    .home-icon10,
     .home-icon12 {
       margin-bottom: var(--dl-space-space-unit);
     }
+    .home-container11,
+    .home-container12 { /* Añadido para asegurar que no haya desbordamiento */
+      overflow: hidden; /* Oculta el contenido que desborda el contenedor */
+      width: 100%; /* Asegura que el contenedor no sea más ancho que la pantalla */
+      max-width: 100%; /* Asegura que el contenedor no sea más ancho que la pantalla */
+      box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    }
   }
+  
+  
   
