@@ -14,7 +14,7 @@ class Index(View):
     def post(self,resquest):
         
     
-        openai.api_key = "API_KEY"
+        openai.api_key = 'API_KEY'
         
         sector = resquest.POST.get('sector','')
         habilidad = resquest.POST.get('habilidad','')
