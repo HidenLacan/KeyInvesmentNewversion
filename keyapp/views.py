@@ -3,6 +3,8 @@ from django.views import View
 import openai
 import requests
 
+import os
+api_key = os.environ.get('API_KEY')
 class Index(View):
     
  
@@ -13,8 +15,9 @@ class Index(View):
     
     def post(self,resquest):
         
+        
     
-        openai.api_key = 'API_KEY'
+        openai.api_key = api_key
         
         sector = resquest.POST.get('sector','')
         habilidad = resquest.POST.get('habilidad','')
