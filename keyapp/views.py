@@ -14,7 +14,7 @@ class Index(View):
     def post(self,resquest):
         
     
-        openai.api_key = "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"
+        openai.api_key = "API_KEY"
         
         sector = resquest.POST.get('sector','')
         habilidad = resquest.POST.get('habilidad','')
@@ -33,7 +33,7 @@ class Index(View):
         messages = f"Sector:{sector}\nHabilidad:{habilidad}\nIdea:{idea}\nInversion:{inversion}\nProduccion:{produccion}\nGanancia:{ganancia}\nLocation:{location}\ninformation:{string_convert_data}"
         economia = "Según datos del Censo Económico 2019, los sectores económicos que concentraron más unidades económicas en General Escobedo fueron Comercio al por Menor (4,220 unidades), Otros Servicios Excepto Actividades Gubernamentales (1,646 unidades) y Servicios de Alojamiento Temporal y de Preparación de Alimentos y Bebidas (1,376 unidades)."
         poblacion = "La población total de General Escobedo en 2020 fue 481,213 habitantes, siendo 49.7% mujeres y 50.3% hombres.Los ranos de edad que concentraron mayor población fueron 15 a 19 años (43,932 habitantes), 20 a 24 años (43,591 habitantes) y 10 a 14 años (43,414 habitantes). Entre ellos concentraron el 27.2% de la población total.Según el tipo de institución de educación superior, la mayor cantidad de egresados en el ciclo escolar 2020-2021 en General Escobedo egresaron de: Universidades Públicas Estatales (37.9%, 171,130 egresados), Universidades Tecnológicas (19.2%, 86,875 egresados) y Tecnológico Nacional de México (15.5%, 70,205 egresados).Por nivel educativo, destacan los egresados de licenciatura (80.3%, 362,706 egresados) y técnico superior universitario (11.1%, 50,001 egresados).Los gráficos muestran los egresados por tipo de institución de educación superior y nivel educacional. Puede seleccionar una categoría en uno de los gráficos para filtrar la información mostrada en el otro gráfico."
-        print(f'{data_hs6}')
+        print(f'{consume_api}')
         
         
             
