@@ -9,8 +9,8 @@ class Index(View):
     
     
     def get(self,resquest):
-        ##openai.api_key = settings.OPENAI_API_KEY
-        ##print("API Key:", os.environ.get('API_KEY'))
+        openai.api_key = settings.OPENAI_API_KEY
+        print("API Key:", os.environ.get('API_KEY'))
         return render(resquest,'index.html')
     
     def post(self,resquest):
