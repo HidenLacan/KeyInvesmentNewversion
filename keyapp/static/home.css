@@ -442,11 +442,12 @@
   }
   .home-cta-btn1 {
     
-    
+    align-self: stretch;
     text-align: center;
-    
-    border-width: 10px;
-    
+    padding-top: var(--dl-space-space-doubleunit);
+    border-width: 1px;
+    border-radius: 34px;
+    padding-bottom: var(--dl-space-space-doubleunit);
     background-color: #ffffff;
   }
   .home-features {
