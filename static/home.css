@@ -1,3 +1,77 @@
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 650;
+  font-style: normal;
+  
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
 .feature-card4-feature-card {
     width: 100%;
     display: flex;
@@ -27,7 +101,13 @@
   
   
   
- 
+  @media(max-width: 479px) {
+    .feature-card4-text {
+      font-style: normal;
+      font-weight: 600;
+    }
+  }
+  
   .gallery-card2-gallery-card {
     width: 100%;
     height: 100%;
@@ -104,7 +184,46 @@
       flex-direction: column;
     }
   }
-
+  @media(max-width: 480px) {
+    .home-burger-menu {
+      margin-left: var(--dl-space-space-doubleunit);
+    }
+    .home-cta-btn {
+      font-size: 1rem; /* Cambiado de 16px a 1rem */
+      padding: var(--dl-space-space-unit);
+    }
+    .home-hero-text-container,
+    .home-container04,
+    .home-text13 {
+      width: 100%; /* Esto asegura que los contenedores ocupen todo el ancho */
+    }
+    .home-features,
+    .home-testimonial {
+      padding: 2rem var(--dl-space-space-unit); /* Esto proporciona un padding uniforme */
+    }
+    .home-container03,
+    .home-container11 {
+      grid-template-columns: 1fr; /* Asegura una sola columna en contenedores de grid */
+    }
+    .home-image1,
+    .home-image2 {
+      width: 100%; /* Hace que las imágenes sean responsivas */
+      height: auto; /* Mantiene la proporción de las imágenes */
+      max-width: 250px; /* Limita el tamaño máximo de la imagen */
+      max-height: 250px;
+    }
+    .home-gallery {
+      padding: var(--dl-space-space-unit);
+      flex-direction: column;
+    }
+    .home-icon10 {
+      margin-bottom: 0;
+    }
+    .home-icon12 {
+      margin-bottom: var(--dl-space-space-unit);
+    }
+  }
+  
   .home-container {
     width: 100%;
     height: auto;
@@ -119,7 +238,7 @@
     display: flex;
     z-index: 100;
     position: sticky;
-    box-shadow: 5px 5px 10px 0px #d4d4d4;
+    
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -304,7 +423,7 @@
     padding-bottom: var(--dl-space-space-fiveunits);
     background-size: cover;
     justify-content: space-between;
-    background-image: url('mm.jpg');
+    background-image: url('bb.jpg');
   }
   .home-hero-text-container {
     width: 35%;
@@ -329,7 +448,7 @@
     border-width: 0px;
     border-radius: 34px;
     padding-bottom: var(--dl-space-space-doubleunit);
-    background-color: #000000;
+    background-color: #ffffff;
   }
   .home-features {
     width: 100%;
@@ -451,8 +570,6 @@
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-
-    
   }
   .home-image2 {
     width: 450px;
@@ -473,8 +590,6 @@
     height: 410px;
     display: flex;
   }
-
-    /* here the problem */
   .home-container12 {
     flex: 0 0 auto;
     /* width: 800px;
@@ -486,8 +601,6 @@
     flex-direction: column;
     justify-content: flex-start;
   }
-
-  /* here the problem */
   .home-container13 {
     /* width: 424px;
     height: 473px; */
@@ -495,8 +608,8 @@
     flex-direction: column;
   }
   .home-container14 {
-    width: 401px;
-    height: 108px;
+    /* width: 401px;
+    height: 108px; */
     display: flex;
     flex-direction: column;
   }
@@ -509,8 +622,8 @@
     height: 53px;
   }
   .home-container15 {
-    width: 401px;
-    height: 108px;
+    /* width: 401px;
+    height: 108px; */
     display: flex;
     flex-direction: column;
   }
@@ -519,8 +632,8 @@
     height: 53px;
   }
   .home-container16 {
-    width: 401px;
-    height: 108px;
+    /* width: 401px;
+    height: 108px; */
     display: flex;
     flex-direction: column;
   }
@@ -689,23 +802,6 @@
     }
   }
   @media(max-width: 479px) {
-
-
-    .label {
-      font-size: 0.875rem; /* Ajusta el tamaño de la fuente */
-      padding: 0.5rem; /* Reduce el padding si es necesario */
-      margin: 0; /* Asegúrate de que el margen no sea demasiado grande */
-      white-space: nowrap; /* Evita que el texto se envuelva si eso es deseable */
-      overflow: hidden; /* Oculta el texto que desborda el contenedor */
-      text-overflow: ellipsis; /* Muestra puntos suspensivos si el texto es demasiado largo */
-    }
-    .form-select{
-        max-width: auto;
-    }
-
-    .form-control{
-      max-width: auto;
-    }
     .home-burger-menu {
       margin-left: var(--dl-space-space-doubleunit);
     }
@@ -744,10 +840,9 @@
     .home-container11,
     .home-container12 { /* Añadido para asegurar que no haya desbordamiento */
       overflow: hidden; /* Oculta el contenido que desborda el contenedor */
-      /* Asegura que el contenedor no sea más ancho que la pantalla */
+      width: 100%; /* Asegura que el contenedor no sea más ancho que la pantalla */
+      max-width: 100%; /* Asegura que el contenedor no sea más ancho que la pantalla */
       box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
-
-      
     }
   }
   
