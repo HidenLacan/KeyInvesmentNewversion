@@ -441,13 +441,12 @@
     margin-bottom: var(--dl-space-space-tripleunit);
   }
   .home-cta-btn1 {
-    color: var(--dl-color-gray-white);
-    align-self: stretch;
+    
+    
     text-align: center;
-    padding-top: var(--dl-space-space-doubleunit);
-    border-width: 0px;
-    border-radius: 34px;
-    padding-bottom: var(--dl-space-space-doubleunit);
+    
+    border-width: 10px;
+    
     background-color: #ffffff;
   }
   .home-features {
