@@ -13,9 +13,9 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from pathlib import Path
 import os
 import os
-from dotenv import load_dotenv
+##from dotenv import load_dotenv
 
-load_dotenv()
+##load_dotenv()
 
 OPENAI_API_KEY = os.getenv("API_KEY")
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
