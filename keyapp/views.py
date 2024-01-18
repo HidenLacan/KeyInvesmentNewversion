@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views import View
 import openai 
-##import requests
+import requests
 import os
 from django.conf import settings
 
@@ -10,12 +10,20 @@ class Index(View):
     
     def get(self,resquest):
         openai.api_key = settings.OPENAI_API_KEY
-        print("API Key:", os.environ.get('API_KEY'))
         return render(resquest,'index.html')
     
     def post(self,resquest):
-        
         openai.api_key = settings.OPENAI_API_KEY
+        
+         
+        url = f'https://www.economia.gob.mx/apidatamexico/tesseract/data.jsonrecords?Date+Year=2022&Flow=2&State=19&cube=economy_foreign_trade_ent&drilldowns=HS6%2CChapter%2CState%2CDate+Year%2CFlow&locale=es&measures=Trade+Value'
+        responses = requests.get(url)
+        data_api = responses.json()
+        consume_api = data_api['data'][:20]
+        data_hs6 = [data_consume_api['HS6'] for data_consume_api in consume_api]
+        string_convert_data = ','.join(map(str,data_hs6))
+        
+        
         sector = resquest.POST.get('sector','')
         habilidad = resquest.POST.get('habilidad','')
         idea = resquest.POST.get('idea','')
@@ -23,8 +31,7 @@ class Index(View):
         ganancia = resquest.POST.get('ganancia','')
         produccion = resquest.POST.get('produccion','')
         location = resquest.POST.get('location','')
-        
-        
+    
         
         
         messages = f"Sector:{sector}\nHabilidad:{habilidad}\nIdea:{idea}\nInversion:{inversion}\nProduccion:{produccion}\nGanancia:{ganancia}\nLocation:{location}"
@@ -33,8 +40,8 @@ class Index(View):
         response = openai.chat.completions.create(
              model='gpt-3.5-turbo',
              messages=[
-                 {'role': 'system', 'content': 'Eres una inteligencia artificial dedicada a la maximizacion de los negocios financieros'},
-                 {'role': 'user', 'content':'Haz una valoracion preliminar de inversion destacando valor presente neto, tasa interna de retorno, metodo de perio de recuperacion, indice de rentabilidad,comportamiento de consumidor'+ 'tomando en cuenta su economia' + economia + 'poblacion y las posibles demandas : '+ poblacion  + messages}
+                 {'role': 'system', 'content': 'Eres una inteligencia artificial dedicada a la maximizacion de los negocios financieros que toma en cuenta las variables que te pasare para tener una idea de negocio'},
+                 {'role': 'user', 'content':'Haz una valoracion preliminar de inversion destacando valor presente neto, tasa interna de retorno, metodo de perio de recuperacion, indice de rentabilidad,comportamiento de consumidor'+ 'tomando en cuenta su economia' + economia + 'poblacion y las posibles demandas : '+ poblacion  + messages + 'asi como los productos que mas se venden en el estado de nuevo leon' + string_convert_data}
              ]
          )          
         message = response.choices[0].message.content.strip()
@@ -44,7 +51,7 @@ class Index(View):
     
 
 
- ##    url = f'https://www.economia.gob.mx/apidatamexico/tesseract/data.jsonrecords?Municipality=19021&cube=economy_foreign_trade_mun&drilldowns=Chapter%2CHS2%2CHS4%2CMunicipality%2CHS6%2CProduct+Level&locale=es&measures=Trade+Value&parents=false&sort=Trade+Value.desc'
+ ##    url = f'https://www.economia.gob.mx/apidatamexico/tesseract/data.jsonrecords?Date+Year=2022&Flow=2&State=19&cube=economy_foreign_trade_ent&drilldowns=HS6%2CChapter%2CState%2CDate+Year%2CFlow&locale=es&measures=Trade+Value'
 
         ##responses = requests.get(url)
         ##data_api = responses.json()

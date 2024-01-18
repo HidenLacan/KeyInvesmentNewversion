@@ -15,8 +15,8 @@ import os
 import os
 
 ## REmember desactivate dotenv when you are deploying on localhost
-from dotenv import load_dotenv
-load_dotenv()
+#from dotenv import load_dotenv
+#load_dotenv()
 
 OPENAI_API_KEY = os.getenv("API_KEY")
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -132,7 +132,7 @@ STATIC_ROOT = BASE_DIR / "static/"
 
 if not DEBUG: 
     STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
-
+#python manage.py collectstatic --no-input
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

@@ -846,5 +846,48 @@
     }
   }
   
-  
+  @media(max-width: 360px) {
+    .home-burger-menu {
+      margin-left: var(--dl-space-space-doubleunit);
+    }
+    .home-cta-btn {
+      font-size: 1rem; /* Cambiado de 16px a 1rem */
+      padding: var(--dl-space-space-unit);
+    }
+    .home-hero-text-container,
+    .home-container04,
+    .home-text13 {
+      width: 100%; /* Esto asegura que los contenedores ocupen todo el ancho */
+    }
+    .home-features,
+    .home-testimonial {
+      padding: 2rem var(--dl-space-space-unit); /* Esto proporciona un padding uniforme */
+    }
+    .home-container03,
+    .home-container11 {
+      grid-template-columns: 1fr; /* Asegura una sola columna en contenedores de grid */
+    }
+    .home-image1,
+    .home-image2 {
+      width: 100%; /* Hace que las imágenes sean responsivas */
+      height: auto; /* Mantiene la proporción de las imágenes */
+      max-width: 100%; /* Ajusta el ancho máximo al 100% del contenedor */
+      max-height: auto; /* Altura máxima automática para mantener la proporción */
+    }
+    .home-gallery {
+      padding: var(--dl-space-space-unit);
+      flex-direction: column;
+    }
+    .home-icon10,
+    .home-icon12 {
+      margin-bottom: var(--dl-space-space-unit);
+    }
+    .home-container11,
+    .home-container12 { /* Añadido para asegurar que no haya desbordamiento */
+      overflow: hidden; /* Oculta el contenido que desborda el contenedor */
+      width: 100%; /* Asegura que el contenedor no sea más ancho que la pantalla */
+      max-width: 100%; /* Asegura que el contenedor no sea más ancho que la pantalla */
+      box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    }
+  }
   
