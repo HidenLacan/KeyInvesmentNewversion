@@ -3,7 +3,11 @@
   font-weight: 100;
   font-style: normal;
 }
-
+.nav-scrolled {
+  background-color: rgb(0, 0, 0); /* Replace with your desired color */ /* Smooth transition for the color change */
+  color: #ffffff; /* Text color */
+  z-index: 40; /* Correct z-index property */
+}
 .roboto-thin-italic {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
@@ -70,13 +74,7 @@
   font-weight: 900;
   font-style: italic;
 }
-.nav-scrolled {
-  background-color: black ; /* Replace with your desired color */
-  transition: background-color 0.3s; 
-  color: #ffffff;/* Smooth transition for the color change */
-  z-index: 40;
-  
-}
+
 
 .feature-card4-feature-card {
     width: 100%;
