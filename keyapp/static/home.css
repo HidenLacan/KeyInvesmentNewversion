@@ -3,7 +3,11 @@
   font-weight: 100;
   font-style: normal;
 }
-
+.nav-scrolled {
+  background-color: rgb(0, 0, 0); /* Replace with your desired color */ /* Smooth transition for the color change */
+  color: #ffffff; /* Text color */
+  z-index: 40; /* Correct z-index property */
+}
 .roboto-thin-italic {
   font-family: "Roboto", sans-serif;
   font-weight: 100;

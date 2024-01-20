@@ -1,189 +1,176 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 
-{% block content  %}
-    
-    <div class="home-container">
-        <div  class="home-hero">
-            <div id="home" class="home-hero-text-container">
-                <h1 class="home-heading roboto-regular">Invesment Key</h1>
-                <span class="home-text02 roboto-thin">
-                    <span class="home-text03 roboto-thin ">
-                        Investment Key es una plataforma avanzada que ofrece recomendaciones de inversión personalizadas, aprovechando el poder de la inteligencia artificial. Nuestra aplicación analiza extensos conjuntos de datos de APIs públicas para proporcionarte una visión precisa del valor de mercado de productos o servicios en tu localidad. Con Investment Key, puedes tomar decisiones de inversión informadas basadas en estimaciones confiables y adaptadas a tu entorno geográfico.
-
-                        Características clave:
-                        
-                            Análisis Localizado: Obtén consejos de inversión que se ajustan específicamente a tu área local.
-                            Estimaciones Precisas: Estima el precio de mercado de potenciales inversiones con la ayuda de datos robustos.
-                            Validación Automatizada: Confirma la veracidad de la información con nuestra red de robots automatizados, diseñados para asegurar la exactitud local.
-                        
-                        Sumérgete en la experiencia de Investment Key y toma el control de tus inversiones con inteligencia y precisión.
-                    </span>
-                    <br />
-                    <br />
-                    <span>
-                        A continuación, se presentan los requisitos con los que la aplicación web opera, asegurándose de validar la información localmente mediante el uso de robots automatizados. Disfruta de Investment Key.
-                    </span>
-                    <br />
-                </span>
-                <button class="home-cta-btn1 Anchor button"><a class="home-link" href="#about-us"> <span> Start</span>  </a></button>
-            </div>
+{% block content %}
+  <div class="">
+    <div class="relative z-0 p-20 bg-auto bg-no-repeat bg-cover bg-center min-h-screen bg-[url('https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')]">
+      <div class="absolute inset-0 bg-black bg-opacity-50 z-10">
+        <div id="home" class=" p-20 relative z-20">
+            <br><br>
+          <h1 class="text-7xl sm:text-7xl md:text-7xl lg:text-8xl xl:text-9xl text-white roboto-light ">Invesment Key</h1>
+            <h1 class="text-white  sm:text-xl md:text-3xl lg:text-4xl xl:text-4xl roboto-light ">
+                <br>
+                Un lugar donde tus ideas son impulsadas 
+                <br> con datos del mercado actual.
+            </h1>
         </div>
-        <div id="servicios" class="home-features">
-            <h1 class="home-text08 roboto-regular">Servicios</h1>
-            <div class="home-container02">
-                <div class="home-container03">
-                    <div class="feature-card4-feature-card feature-card4-root-class-name1">
-                        <svg viewBox="0 0 1024 1024" class="feature-card4-icon">
-                            <path
-                                d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z">
-                            </path>
-                        </svg>
-                        <h2 class="feature-card4-text"><span>Busca</span></h2>
-                        <span class="feature-card4-text1">
-                            <span>
-                                Información relevante para ejecutar un producto o servicio
-                                en tu localidad.
-                            </span>
-                        </span>
-                    </div>
-                    <div class="feature-card4-feature-card feature-card4-root-class-name4">
-                        <svg viewBox="0 0 1024 1024" class="feature-card4-icon">
-                            <path
-                                d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z">
-                            </path>
-                        </svg>
-                        <h2 class="feature-card4-text"><span>Evalúa</span></h2>
-                        <span class="feature-card4-text1">
-                            <span>
-                                La información financiera respecto al producto o servicio en
-                                el que piensas invertir.
-                            </span>
-                        </span>
-                    </div>
-                    <div class="feature-card4-feature-card feature-card4-root-class-name3">
-                        <svg viewBox="0 0 1024 1024" class="feature-card4-icon">
-                            <path
-                                d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z">
-                            </path>
-                        </svg>
-                        <h2 class="feature-card4-text roboto-regular"><span>Analiza</span></h2>
-                        <span class="feature-card4-text1">
-                            <span>
-                                El posicionamiento de tu producto en el contexto cotidiano
-                                de tus posibles consumidores.
-                            </span>
-                        </span>
-                    </div>
-                    <div class="feature-card4-feature-card feature-card4-root-class-name2">
-                        <svg viewBox="0 0 1024 1024" class="feature-card4-icon">
-                            <path
-                                d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z">
-                            </path>
-                        </svg>
-                        <h2 class="feature-card4-text roboto-regular"><span>Valora</span></h2>
-                        <span class="feature-card4-text1">
-                            <span>
-                                Tu idea y manten información actualizada respecto al
-                                movimiento economíco del producto.
-                            </span>
-                        </span>
-                    </div>
-                </div>
-                <img alt="image"
-                    src="../static/pexels-magda-ehlers-4198864.jpg"
-                    class="home-image1" />
-            </div>
-        </div>
-        <div id="about-us" class="home-about-us">
-            <h1 class="home-text08 roboto-regular">Datos</h1>
-            <div class="home-container10">
-                
-                <img alt="image"
-                    src="../static/pexels-magda-ehlers-4198862.jpg"
-                    class="home-image2" />
-                <div class="">
-                    <form  method="POST" action="{%url 'index' %}" >
-                        {%csrf_token%}
-                                <label for="sector">Sector:</label>
-                                <select  class="form-select" name="sector">
-                                    <option value="Ganaderia">Ganaderia</option>
-                                    <option value="Joyeria">Joyeria</option>
-                                    <option value="Agricultura">Agricultura</option>
-                                    <option value="Herramientas">Herramientas</option>
-                                    <option value="Construccion">Construccion</option>
-                                    <option value="Procesamiento de alimentos">Procesamiento de alimentos</option>
-                                    <option value="Industria automotriz">Industria automotriz</option>
-                                    <option value="Industria motomotriz">Industria motomotriz</option>
-                                    <option value="Generacion de energia">Generacion de energia</option>
-                                    <option value="Comercio">Comercio</option>
-                                    <option value="Turistico">Turistico</option>
-                                    <option value="Salud">Salud</option>
-                                    <option value="Transporte">Transporte</option>
-                                    <option value="Cuidados esteticos">Cuidados esteticos</option>
-                                    <option value="Educacion">Educacion</option>
-                                    <option value="Actividades culturales y deportivas">Actividades culturales y deportivas</option>
-                                    <option value="Espectaculos">Espectaculos</option>
-                                </select> 
-
-                                
-                                <div class="home-container15">
-                                    <span>Habilidad&nbsp;</span>
-                                    <input name="habilidad" type="text" placeholder="Habilidad"
-                                    class="form-control"/>
-                                </div>
-                                <div class="home-container16">
-                                    <span>Idea&nbsp;</span>
-                                    <input name="idea" type="text" placeholder="Idea" class="form-control" />
-                                </div>
-                                <div class="home-container17">
-                                    <span>Inversion inicial&nbsp;</span>
-                                    <input name="inversion" type="text" placeholder="Monto de inversion inicial"
-                                    class="form-control" />
-                                </div>
-
-                                <div class="home-container17">
-                                    <span>Margen de Ganancia&nbsp;</span>
-                                    <input name="ganancia" type="text" placeholder="Porcentaje"
-                                    class="form-control" />
-                                </div>
-
-                                <div class="home-container17">
-                                    <span>Costo estimado de produccion&nbsp;</span>
-                                    <input name="produccion" type="text" placeholder="Aproximacion"
-                                    class="form-control" />
-                                </div>
-
-
-                                <label for="location">Ubicación:</label>
-                                <select  class="form-select" name="location">
-                                    <option value="General escobedo centro">General Escobedo Centro</option>
-                                    <option value="General Escobedo Colindacion San Nicolas">General Escobedo Colindacion San Nicolas</option>
-                                    <option value="General Escobedo Colindacion Garcia">General Escobedo Colindacion Garcia</option>
-                                    <option value="General Escobedo Colindacion Apodaca">General Escobedo Colindacion Apodaca</option>
-                                </select> 
-                                <hr>
-                                <button type="submit" class="home-cta-btn1 Anchor button"> Cotiza</button>
-                                <hr>
-
-                                
-
-
-                            
-
-                    </form>
-                    
-
-                </div>
-                
-            </div>
-            
-        </div>
-        
+      </div>
     </div>
+    <!---Servicios--->
+    <div id="" class="bg-black text-white">
+        <div class="container px-5 py-14 mx-auto">
+            <div class="flex flex-col  w-full mb-20">
+              <hr class="border-white bg-white border-t ">
+              <h1 class="text-white ml-3 mt-1 text-3xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-4xl roboto-light ">Servicios</h1>
+            </div>
+            <div class="flex flex-wrap -m-7">
+              <div class="lg:w-1/3 w-2/2 p-4">
+                <div class="max-w-sm  overflow-hidden shadow-lg">
+                    <img class="w-full" src="https://images.pexels.com/photos/8299707/pexels-photo-8299707.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Sunset in the mountains">
+                    <div class="px-6 py-4">
+                      <div class="font-bold text-xl mb-2">Evalúa</div>
+                      <p class="text-white- text-base">
+                        La información financiera respecto al producto o servicio en el que piensas invertir.
+                      </p>
+                    </div>
+                  </div>
+              </div>
+        
+              <div class="lg:w-1/3 w-2/2 p-4">
+                <div class="max-w-sm  overflow-hidden shadow-lg">
+                    <img class="w-full" src='https://royalsociety.org/-/media/journals/ethics/data.jpg?h=724&w=950&la=en-GB&hash=7D85D86A9DFF0291C24244C0314E6A53'>
+                    <div class="px-6 py-4">
+                      <div class="font-bold text-xl mb-2">Analiza</div>
+                      <p class="text-white text-base">
+                        El posicionamiento de tu producto con inteligencia artificial.
+                      </p>
+                    </div>
+                  </div>
+              </div>
+        
+              <div class="lg:w-1/3 w-2/2 p-4">
+                <div class="max-w-sm  overflow-hidden shadow-lg">
+                    <img class="w-full" src="https://images.pexels.com/photos/425122/pexels-photo-425122.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Sunset in the mountains">
+                    <div class="px-6 py-4">
+                      <div class="font-bold text-xl mb-2">Valora</div>
+                      <p class="text-white text-base">
+                        Tu idea y manten información actualizada respecto al movimiento economíco del producto.
+                      </p>
+                    </div>
+                    
+                </div>
+              </div>
+        
+              
+             
+              
+          </div>
+      
+       
+      
+    </div>
+    <!--Producto-->
     
+    <div id="tool" class="container px-5 py-14 mx-auto">
+      <hr class="border-white bg-white border-t ">  
+      <h1 class="text-white ml-3 mt-1 text-3xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-4xl roboto-light">Datos</h1>
+      <div class="flex flex-wrap">
+          <div class="lg:w-1/3 w-2/2 p-4">
+            <div class="max-w-sm  overflow-hidden shadow-lg">
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">Instrucciones</div>
+                  <p class="text-white text-base">
+                    1.- Selecciona el sector que más se releciona con tu idea.
+                  </p>
+                  <p class="text-white text-base">
+                    2.- Escribe la habilidad que quieres desempeñar para que funcione tu idea.
+                  </p>
+                  <p class="text-white text-base">
+                    3.- Mencionanos tu idea principal.
+                  </p>
+                  <p class="text-white text-base">
+                    4.-Teclea cuanto dinero te gustaría invertir para crear esta idea.
+                  </p><p class="text-white text-base">
+                    5.-Para todo negocio hay un margen de ganancia dinos que porcentaje quieres ganar.
+                  </p>
+                  <p class="text-white text-base">
+                    6.-Dinos un precio aporoximado por unidad o servicio que vas a vender.
+                  </p>
+                  <p class="text-white text-base">
+                    7.-Elige la ubicación.
+                  </p>
+                  <p class="text-white text-base">
+                    8.- Presiona cotizar y espera la magia.
+                  </p>
+                </div>
+            </div>
+          </div>
+          <form method="POST" action="{% url 'index' %}">
+            {% csrf_token %}
+            <label for="sector">Sector:</label>
+            <select class="form-select" name="sector">
+              <option value="Ganaderia">Ganaderia</option>
+              <option value="Joyeria">Joyeria</option>
+              <option value="Agricultura">Agricultura</option>
+              <option value="Herramientas">Herramientas</option>
+              <option value="Construccion">Construccion</option>
+              <option value="Procesamiento de alimentos">Procesamiento de alimentos</option>
+              <option value="Industria automotriz">Industria automotriz</option>
+              <option value="Industria motomotriz">Industria motomotriz</option>
+              <option value="Generacion de energia">Generacion de energia</option>
+              <option value="Comercio">Comercio</option>
+              <option value="Turistico">Turistico</option>
+              <option value="Salud">Salud</option>
+              <option value="Transporte">Transporte</option>
+              <option value="Cuidados esteticos">Cuidados esteticos</option>
+              <option value="Educacion">Educacion</option>
+              <option value="Actividades culturales y deportivas">Actividades culturales y deportivas</option>
+              <option value="Espectaculos">Espectaculos</option>
+            </select>
 
-    
-{% endblock%}
-    
+            <div class="home-container15">
+              <span>Habilidad&nbsp;</span>
+              <input name="habilidad" type="text" placeholder="Habilidad" class="form-control" />
+            </div>
+            <div class="home-container16">
+              <span>Idea&nbsp;</span>
+              <input name="idea" type="text" placeholder="Idea" class="form-control" />
+            </div>
+            <div class="home-container17">
+              <span>Inversion inicial&nbsp;</span>
+              <input name="inversion" type="text" placeholder="Monto de inversion inicial" class="form-control" />
+            </div>
 
+            <div class="home-container17">
+              <span>Margen de Ganancia&nbsp;</span>
+              <input name="ganancia" type="text" placeholder="Porcentaje" class="form-control" />
+            </div>
+
+            <div class="home-container17">
+              <span>Costo estimado de produccion&nbsp;</span>
+              <input name="produccion" type="text" placeholder="Aproximacion" class="form-control" />
+            </div>
+
+            <label for="location">Ubicación:</label>
+            <select class="form-select" name="location">
+              <option value="General escobedo centro">General Escobedo Centro</option>
+              <option value="General Escobedo Colindacion San Nicolas">General Escobedo Colindacion San Nicolas</option>
+              <option value="General Escobedo Colindacion Garcia">General Escobedo Colindacion Garcia</option>
+              <option value="General Escobedo Colindacion Apodaca">General Escobedo Colindacion Apodaca</option>
+            </select>
+           
+            <button type="submit" class="bg-gray-500 hover:bg-gray-700 text-white font-bold mt-8 py-2 px-4 rounded">
+                Cotiza
+              </button>
+              
+            
+          </form>
+          <div class="lg:w-1/3 w-2/2 p-4">
+            <div class="max-w-sm  overflow-hidden shadow-lg">
+                <img class="w-full" src="https://images.pexels.com/photos/5656851/pexels-photo-5656851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Sunset in the mountains">
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
 
