@@ -15,8 +15,8 @@ import os
 import os
 
 ## REmember desactivate dotenv when you are deploying on localhost
-#from dotenv import load_dotenv
-#load_dotenv()
+from dotenv import load_dotenv
+load_dotenv()
 
 OPENAI_API_KEY = os.getenv("API_KEY")
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
