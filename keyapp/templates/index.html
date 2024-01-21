@@ -104,7 +104,7 @@
                 </div>
             </div>
           </div>
-          <form method="POST" action="{% url 'index' %}">
+          <form method="POST" action="{% url 'index' %}" >
             {% csrf_token %}
             <label for="sector">Sector:</label>
             <select class="form-select" name="sector">
@@ -127,25 +127,25 @@
               <option value="Espectaculos">Espectaculos</option>
             </select>
 
-            <div class="home-container15">
+            <div class="">
               <span>Habilidad&nbsp;</span>
               <input name="habilidad" type="text" placeholder="Habilidad" class="form-control" />
             </div>
-            <div class="home-container16">
+            <div class="">
               <span>Idea&nbsp;</span>
               <input name="idea" type="text" placeholder="Idea" class="form-control" />
             </div>
-            <div class="home-container17">
+            <div class="">
               <span>Inversion inicial&nbsp;</span>
               <input name="inversion" type="text" placeholder="Monto de inversion inicial" class="form-control" />
             </div>
 
-            <div class="home-container17">
+            <div class="">
               <span>Margen de Ganancia&nbsp;</span>
               <input name="ganancia" type="text" placeholder="Porcentaje" class="form-control" />
             </div>
 
-            <div class="home-container17">
+            <div class="">
               <span>Costo estimado de produccion&nbsp;</span>
               <input name="produccion" type="text" placeholder="Aproximacion" class="form-control" />
             </div>
